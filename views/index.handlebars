@@ -14,6 +14,13 @@
                 <h2>Ready to be devoured!</h2>
             </div>
             <div class="ready-burgers">
+                <ul>
+                    {{#each burgers}}
+                        {{#unless devoured}}
+                            {{> burgers/burger-block devoured=false}}
+                        {{/unless}}
+                    {{/each}}
+                </ul>
 
             </div>
         </div>
@@ -23,7 +30,14 @@
             <div class="title">
                 <h2>Devoured! YUMMMM!</h2>
             </div>
-            <div class="ready-burgers">
+            <div class="devoured-burgers">
+                <ul>
+                    {{#each burgers}}
+                    {{#if devoured}}
+                    {{> burgers/devoured-block devoured=true}}
+                    {{/if}}
+                    {{/each}}
+                </ul>
 
             </div>
         </div>
