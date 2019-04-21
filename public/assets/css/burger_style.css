@@ -1,0 +1,16 @@
+.list-group-item{
+    margin-top: 3px;
+    margin-bottom: 3px
+}
+ul{
+    padding: 0;
+}
+
+.title{
+    text-align: center;
+
+}
+
+.build-block{
+    margin-top: 40px;
+}
