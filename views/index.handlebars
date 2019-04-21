@@ -1,11 +1,11 @@
-<div class="container">
-    <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron jumbotron-fluid jumbotron-burger">
         <div class="container">
             <h1 class="display-4">Eat-Da-Burger</h1>
-            <p class="lead">Order your own burger.</p>
+            {{!-- <p class="lead"></p> --}}
         </div>
     </div>
-</div>
+
+
 
 <div class="container">
     <div class="row">
@@ -48,13 +48,13 @@
     <div class="row build-block">
         <div class="col">
             <div class="title">
-            <h2>Build your own burger!</h2>
+            <h2>Build Your Own Burger!</h2>
         </div>
 
         <div align="center">
             <form class="create-burger">
                 <div class="form-group">
-                    <input type="text" id="burger-name" ></input>
+                    <input class="burger-input" type="text" id="burger-name" ></input>
                     <small class="form-text text-muted">Enter the type of a burger you would like to eat. Click Submit to add it to a menu.</small>
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
@@ -64,3 +64,7 @@
         
     </div>
 </div>
+
+{{!-- <div class="burger-image">
+    <img src="./assets/img/single-burger.jpg"></img>
+</div> --}}
